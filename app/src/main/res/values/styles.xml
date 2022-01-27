@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalcButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_marginStart">@dimen/small_margin</item>
+        <item name="android:layout_marginEnd">@dimen/small_margin</item>
+        <item name="backgroundTint">@color/btn_background</item>
+        <item name="fontFamily">@font/bullpen_font</item>
+    </style>
+
+    <style name="CalcButton.Action">
+        <item name="backgroundTint">@color/btn_action_background</item>
+    </style>
+
+
+    <style name="CalcButton.V2">
+        <item name="backgroundTint">@android:color/holo_red_dark</item>
+    </style>
+
+    <style name="CalcButton.V3">
+        <item name="backgroundTint">@android:color/holo_green_dark</item>
+    </style>
+
+</resources>

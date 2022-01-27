@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CalculatorActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/theme_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_one" />
+
+        <Button
+            android:id="@+id/theme_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_two" />
+
+        <Button
+            android:id="@+id/theme_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_three" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="@dimen/result_text_size"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        app:layout_constraintStart_toStartOf="@id/keyboard"
+        app:layout_constraintEnd_toEndOf="@id/keyboard"
+        app:layout_constraintBottom_toTopOf="@id/keyboard"
+        android:text="500" />
+
+    <GridLayout
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:columnCount="@integer/column_count"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include layout="@layout/keyboard" />
+
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
