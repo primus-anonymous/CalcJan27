@@ -1,4 +1,4 @@
-package com.neocaptainnemo.calcjan27;
+package com.neocaptainnemo.calcjan27.ui;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.neocaptainnemo.calcjan27.R;
 
 public class TextInputActivity extends AppCompatActivity {
 

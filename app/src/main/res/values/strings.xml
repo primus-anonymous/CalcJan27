@@ -20,4 +20,6 @@
     <string name="theme_one">Theme One</string>
     <string name="theme_two">Two</string>
     <string name="theme_three">Three</string>
+    <string name="btn_settings">Choose a Theme</string>
+    <string name="btn_man">Man</string>
 </resources>
